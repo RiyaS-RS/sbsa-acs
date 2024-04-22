@@ -95,7 +95,7 @@ jobs:
               cmake ../ -G "Unix Makefiles" -DCROSS_COMPILE=$CROSS_COMPILE -DTARGET=RDN2
               make
       - name: Find sbsa.bin file
-        run: find / -name "sbsa.bin"
+        run: find /home/runner/work/ -name "sbsa.bin"
 
       - name: Save Baremetel sbsa.bin as an artifact
         uses: actions/upload-artifact@v4
